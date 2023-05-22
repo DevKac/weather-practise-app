@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
-## Development server
+# Task Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Using the API available at https://openweathermap.org/current and city list (http://bulk.openweathermap.org/sample/) create an application capable of downloading current weather and presenting received data accordingly to the attached schema. The application should allow choosing another city by a select box in the upper right corner.
 
-## Code scaffolding
+The application should be created using any JavaScript framework of your choice. Angular js preferred.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. To show information, add icons related to the information presented (i.e. using http://fontawesome.io/ - http://fontawesome.io/icon/thermometer-empty/ to present temperature information)
 
-## Build
+3. Using any map providing service (i.e. https://developers.google.com/maps/documentation/javascript/adding-a-google-map), add a map to created application. Choosing a city should place a marker on the map, at appropriate place.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Running Application
 
-## Running unit tests
+Before running following API Keys must be configured:
+1. {GoogleMapsApiKey} in `src\index.html`
+2. {OpenWeatherMapApiKey} in `src\app\services\weather\weather.service.ts`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+With correct keys set run program using `npm run start`

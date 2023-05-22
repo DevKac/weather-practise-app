@@ -1,0 +1,5 @@
+<div class="select-container mt-2" *ngIf="cityList?.length">
+  <select [ngModel]="selectedCity" (ngModelChange)="onSelectCity($event)">
+    <option *ngFor="let city of cityList" [ngValue]="city" >{{ city?.name }}</option>
+  </select>
+</div>
